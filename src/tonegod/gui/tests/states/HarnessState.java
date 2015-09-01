@@ -320,7 +320,7 @@ public class HarnessState extends AppStateCommon {
 		unload = new ButtonAdapter(screen, Vector2f.ZERO, LayoutHelper.dimensions(cTestSelect.getWidth()/4*3, cTestSelect.getHeight())) {
 			@Override
 			public void onButtonMouseLeftUp(MouseButtonEvent evt, boolean toggled) {
-				if (!cTestSelect.getListItems().isEmpty()) {
+				if (cTestSelect.getListItems() != null && !cTestSelect.getListItems().isEmpty()) {
 					main.getStateManager().detach((AppStateCommon)cTestSelect.getSelectedListItem().getValue());
 					reloadTestSelect();
 					reloadCurrentTestSelect();

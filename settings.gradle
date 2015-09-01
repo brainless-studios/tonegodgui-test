@@ -1,0 +1,4 @@
+rootProject.name = 'tonegodgui-test'
+
+include ':tonegodgui'
+project(':tonegodgui').projectDir = new File(settingsDir, '../tonegodgui')
