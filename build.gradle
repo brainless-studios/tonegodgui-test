@@ -11,7 +11,7 @@ ext {
                 brainless_studios = 'com.github.brainless-studios'
                 jme_group = 'com.github.jMonkeyEngine.jmonkeyengine'
                 jmonkeyengine_version = 'c5c893f' // 3.1-alpha1
-                tonegodgui_version = '22fe3d55460d8732f3520ce7d5be0a71ecad7de2'
+                tonegodgui_version = '22fe3d5' // 3.1-alpha1
 }
 	sourceCompatibility = 1.7
 
@@ -33,8 +33,8 @@ dependencies {
 	compile "${jme_group}:jme3-desktop:${jmonkeyengine_version}"
         compile "${jme_group}:jme3-core:${jmonkeyengine_version}"
         compile "${jme_group}:jme3-lwjgl:${jmonkeyengine_version}"
-//	compile "${brainless_studios}:tonegodgui:${tonegodgui_version}"
-	compile project(':tonegodgui')
+	compile "${brainless_studios}:tonegodgui:${tonegodgui_version}"
+//	compile project(':tonegodgui')
 }
 
 eclipse.classpath.file {
