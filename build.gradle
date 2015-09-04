@@ -33,6 +33,7 @@ dependencies {
 	compile "${jme_group}:jme3-desktop:${jmonkeyengine_version}"
         compile "${jme_group}:jme3-core:${jmonkeyengine_version}"
         compile "${jme_group}:jme3-lwjgl:${jmonkeyengine_version}"
+        compile "${jme_group}:jme3-plugins:${jmonkeyengine_version}"
 	compile "${brainless_studios}:tonegodgui:${tonegodgui_version}"
 //	compile project(':tonegodgui')
 }

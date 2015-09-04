@@ -26,6 +26,9 @@ public abstract class AppStateCommon extends AbstractAppState {
 		this.screen = main.getScreen();
 	}
 	
+        /**
+         * Update the screen resolution.
+         */
 	public abstract void reshape();
 	
 	@Override

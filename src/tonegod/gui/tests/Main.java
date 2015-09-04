@@ -1,21 +1,5 @@
 package tonegod.gui.tests;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import tonegod.gui.core.Screen;
-import tonegod.gui.tests.states.AppStateCommon;
-import tonegod.gui.tests.states.HarnessState;
-import tonegod.gui.tests.states.TestState;
-import tonegod.gui.tests.states.buttons.ButtonState;
-import tonegod.gui.tests.states.emitter.EmitterState;
-import tonegod.gui.tests.states.spatial.SpatialState;
-import tonegod.gui.tests.states.sprite.SpriteState;
-import tonegod.gui.tests.states.subscreen.EmbeddedGUIState;
-import tonegod.gui.tests.states.text.AnimatedTextState;
-import tonegod.gui.tests.states.text.TextLabelState;
-import tonegod.gui.tests.states.windows.WindowState;
-
 import com.jme3.app.SimpleApplication;
 import com.jme3.font.BitmapFont;
 import com.jme3.light.AmbientLight;
@@ -24,6 +8,21 @@ import com.jme3.math.ColorRGBA;
 import com.jme3.math.Vector3f;
 import com.jme3.renderer.Camera;
 import com.jme3.renderer.RenderManager;
+import java.util.ArrayList;
+import java.util.List;
+import tonegod.gui.core.Screen;
+import tonegod.gui.tests.states.AppStateCommon;
+import tonegod.gui.tests.states.HarnessState;
+import tonegod.gui.tests.states.TestState;
+import tonegod.gui.tests.states.buttons.ButtonState;
+import tonegod.gui.tests.states.emitter.EmitterState;
+import tonegod.gui.tests.states.indicator.IndicatorState;
+import tonegod.gui.tests.states.spatial.SpatialState;
+import tonegod.gui.tests.states.sprite.SpriteState;
+import tonegod.gui.tests.states.subscreen.EmbeddedGUIState;
+import tonegod.gui.tests.states.text.AnimatedTextState;
+import tonegod.gui.tests.states.text.TextLabelState;
+import tonegod.gui.tests.states.windows.WindowState;
 
 /**
  * tonegodGUI Test Project
@@ -70,6 +69,7 @@ public class Main extends SimpleApplication {
 	private EmitterState emitterState;
 	private EmbeddedGUIState subScreenState;
 	private SpatialState spatialState;
+        private IndicatorState indicatorState;
 
 	//</editor-fold>
 
@@ -118,6 +118,8 @@ public class Main extends SimpleApplication {
 		states.add(spriteState);
 		animatedTextState = new AnimatedTextState(this);
 		states.add(animatedTextState);
+		indicatorState = new IndicatorState(this);
+		states.add(indicatorState);
 		labelState = new TextLabelState(this);
 		states.add(labelState);
 		buttonState = new ButtonState(this);
