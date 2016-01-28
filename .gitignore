@@ -48,6 +48,11 @@ local.properties
 *.log
 /.nb-gradle/private/
 *.dll
-/.nb-gradle/
-/tonegodTest/.nb-gradle/
-/teset/.nb-gradle/
+.gradle
+build/
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
