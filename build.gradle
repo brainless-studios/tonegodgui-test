@@ -22,9 +22,9 @@ ext {
 	}
 
 
-mainClassName = 'app.MainRTS'
+mainClassName = 'tonegod.gui.tests.Main'
 if (!hasProperty('mainClass')) {
-	ext.mainClass = 'app.MainRTS'
+	ext.mainClass = 'tonegod.gui.tests.Main'
 }
 
 dependencies {
